@@ -1,11 +1,11 @@
 name: CI Back-end
 
 on:
-   push:
-      branches:
-        - 'main'
-      paths:
-        - 'sgcmapi/**'
+  push:
+    branches:
+      - 'main'
+    paths:
+      - 'sgcmapi/**'
 
 jobs:
   build:
@@ -19,5 +19,5 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       - name: Maven Compile/Test
-        working-directory: sgcm api/
+        working-directory: sgcmapi/
         run: mvn compile test
