@@ -16,7 +16,7 @@ public class FiltroCors {
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowedOrigins(Arrays.asList(
             "http://127.0.0.1:5500/",
-            "http://localhost:4200"));
+            "http://localhost:4200","https://itgct-a1-dupla-01.onrender.com"));
         config.setAllowedMethods(Arrays.asList("*"));
         config.setAllowedHeaders(Arrays.asList("*"));
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
